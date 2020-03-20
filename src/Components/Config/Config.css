@@ -1,0 +1,11 @@
+#Config {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  margin-left: 1vw;
+  margin-right: 1vw; 
+  
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-evenly;
+}
+
