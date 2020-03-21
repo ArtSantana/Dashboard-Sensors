@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(252, 15, 192);
+  background-color: #001f3f;
   height: 6vh;
   width: 100%;  
   display: flex;
@@ -17,7 +17,7 @@
 }
 
 .footer {
-  background-color: rgba(252, 15, 192);
+  background-color: #001f3f;
   text-align: center;
   height: 6vh;
   width: 100%;
@@ -33,6 +33,7 @@
 .btnHeader {
   margin-top: 1vh;
   margin-right: 1vw;
+  color: rgba(224, 224, 224)
 }
 
 .Layout {
@@ -43,4 +44,12 @@
   margin-top: 1vh;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
+  color: rgba(224, 224, 224)
+}
+
+#logo {
+  background-image: url('../Logo.png');
+  background-repeat: no-repeat;  
+  width: 170px;
+  background-size: contain;
 }
