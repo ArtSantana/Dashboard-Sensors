@@ -24,6 +24,7 @@ export default class App extends Component {
             </Switch>
           </div>
           <div className="footer">
+            <h3 id="copyright">© Desenvolvido por Art Santana</h3>
           </div>
         </div>
       </Router>
