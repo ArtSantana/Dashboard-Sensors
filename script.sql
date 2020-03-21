@@ -56,4 +56,6 @@ CREATE TABLE destinatary (
   email varchar(60) not null,
 
   primary key (ID)  
-)
+);
+
+INSERT INTO destinatary (email) VALUES ("temp@watcher.com");
