@@ -9,6 +9,11 @@
   -moz-box-shadow: 0px 1px 8px 7px rgba(0,0,0,0.27);
   box-shadow: 0px 1px 8px 7px rgba(0,0,0,0.27);
   height: 36vh;
+
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
 }
 
 #inputs {

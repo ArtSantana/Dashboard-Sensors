@@ -4,7 +4,6 @@ import Config from './Config/Config';
 import ChupaCana from './ChupaCana';
 import {Switch, Route, Link, BrowserRouter as Router} from 'react-router-dom';
 import 'antd/dist/antd.css';
-import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import SettingsIcon from '@material-ui/icons/Settings';
 
