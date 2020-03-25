@@ -44,7 +44,7 @@ export default class ChartBars extends Component {
     
     return(
       <div>
-        <Chart height={400} data={this.state.data} scale={this.state.cols} forceFit>
+        <Chart height={400} data={this.state.data} scale={this.state.cols} width={1200}>
           <Legend />
           <Axis name="id" />
           <Axis

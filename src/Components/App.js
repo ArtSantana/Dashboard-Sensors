@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Config from './Config/Config';
-import ChupaCana from './ChupaCana';
 import {Switch, Route, Link, BrowserRouter as Router} from 'react-router-dom';
 import 'antd/dist/antd.css';
 import HomeIcon from '@material-ui/icons/Home';
 import SettingsIcon from '@material-ui/icons/Settings';
-import ChartBars from './ChartBars/ChartBars';
+import Home from './Home/Home';
 
 export default class App extends Component {
   render() {
@@ -19,7 +18,7 @@ export default class App extends Component {
           </div>
           <div className="content">
             <Switch>
-              <Route path="/" exact component={ChartBars} />
+              <Route path="/" exact component={Home} />
               <Route path="/config" exact component={Config} />
             </Switch>
           </div>
