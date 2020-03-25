@@ -46,10 +46,3 @@
   font-weight: normal;
   color: rgba(224, 224, 224)
 }
-
-#logo {
-  background-image: url('../Logo.png');
-  background-repeat: no-repeat;  
-  width: 170px;
-  background-size: contain;
-}

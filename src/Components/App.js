@@ -13,8 +13,7 @@ export default class App extends Component {
       <Router>
         <div className="Layout">
           <div className="header">            
-            <Link to="/"><HomeIcon fontSize="large" className="btnHeader"/></Link>
-            <div id="logo"/>
+            <Link to="/"><HomeIcon fontSize="large" className="btnHeader"/></Link>            
             <Link to="/config"><SettingsIcon fontSize="large" className="btnHeader" /></Link>
           </div>
           <div className="content">

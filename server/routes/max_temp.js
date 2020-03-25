@@ -20,9 +20,9 @@ router.get('/search', (req, res) => {
 })
 
 router.patch('/patch', (req, res) => {
-  const query = `UPDATE max_temp SET temperature=${req.body.temperature} WHERE ID=${req.body.id}`;
+  const query = `UPDATE max_temp SET temperature='${req.body.temperature}' WHERE ID=${req.body.ID}`;
   conn.query(query, (err) => {
-    if(err) res.sendStatus(404)
+    if(err) res.status(400).send('Bad arguments');
     else res.sendStatus(200);
   })
 })
