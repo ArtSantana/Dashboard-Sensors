@@ -6,6 +6,7 @@ import {Switch, Route, Link, BrowserRouter as Router} from 'react-router-dom';
 import 'antd/dist/antd.css';
 import HomeIcon from '@material-ui/icons/Home';
 import SettingsIcon from '@material-ui/icons/Settings';
+import ChartBars from './ChartBars/ChartBars';
 
 export default class App extends Component {
   render() {
@@ -18,7 +19,7 @@ export default class App extends Component {
           </div>
           <div className="content">
             <Switch>
-              <Route path="/" exact component={ChupaCana} />
+              <Route path="/" exact component={ChartBars} />
               <Route path="/config" exact component={Config} />
             </Switch>
           </div>
