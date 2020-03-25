@@ -17,7 +17,7 @@ export default class Config extends Component {
   }
 
   async componentDidMount() {
-    const response = await fetch('/sensors');
+    const response = await fetch('/activate/search');
     const data = await response.json();
     Promise.resolve(data).then(() => {
       this.setState({
@@ -31,7 +31,7 @@ export default class Config extends Component {
 
   handleSwitch = (toggle, id) => {
     const data = {
-      toggle: toggle,
+      'toggle': toggle,
       'id': id
     };
     const options = {
@@ -41,7 +41,7 @@ export default class Config extends Component {
       },
       body: JSON.stringify(data)
     }
-    fetch('/sensors/activate', options);
+    fetch('/activate/patch', options);
   }
 
   render() {

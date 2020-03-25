@@ -11,7 +11,7 @@ const conn = mysql.createConnection({
 
 conn.connect((err) => {if(err) console.log(err)});
 
-router.get('/search', (res) => {
+router.get('/search', (req, res) => {
   const query = "SELECT * FROM active";
   conn.query(query, (err, result) => {
     if(err) res.sendStatus(404);
@@ -20,10 +20,13 @@ router.get('/search', (res) => {
 })
 
 router.patch('/patch', (req, res) => {
-  const query = `UPDATE active SET activate=${req.body.activate} WHERE ID=${req.body.id}`;
+  const data = req.body;
+  if(data.toggle) data.toggle = 1;
+  else data.toggle = 0;
+  const query = `UPDATE active SET activate=${data.toggle} WHERE ID=${data.id}`;
   conn.query(query, (err) => {
-    if(err) {console.log(err); res.sendStatus(403)}
-    else res.sendStatus(200);
+    if(err) res.sendStatus(404);
+    else res.sendStatus(204);
   })
 })
 

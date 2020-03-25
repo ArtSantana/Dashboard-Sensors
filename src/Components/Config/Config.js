@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SwitchSensors from '../SensorSwitch/SwitchSensors';
 import TempLimit from '../TempLimit/TempLimit';
+import Email from '../Email/Email';
 import './Config.css'
 
 export default class Config extends Component {
@@ -9,6 +10,7 @@ export default class Config extends Component {
       <div id="Config">
         <SwitchSensors />
         <TempLimit />
+        <Email />
       </div>
     );
   }
