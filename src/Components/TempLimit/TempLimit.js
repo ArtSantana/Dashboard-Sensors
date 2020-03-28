@@ -12,6 +12,8 @@ export default class TempLimit extends Component {
       limitTwo: 23,
       limitThree: 23,
       limitFour: 23,
+      limitFive: 23,
+      limitSix: 23,
     }
   }
 
@@ -24,6 +26,8 @@ export default class TempLimit extends Component {
       limitTwo: data[1].temperature,
       limitThree: data[2].temperature,
       limitFour: data[3].temperature,
+      limitFive: data[4].temperature,
+      limitSix: data[5].temperature,
     })
   }
 
@@ -59,6 +63,12 @@ export default class TempLimit extends Component {
           />
           <InputNumber className="eachInput" size="large" min={1} max={40} value={this.state.limitFour}
             onChange={(e) => {this.setState({limitFour: e}); this.patchMax(e, 4)}}
+          />
+          <InputNumber className="eachInput" size="large" min={1} max={40} value={this.state.limitFive}
+            onChange={(e) => {this.setState({limitFive: e}); this.patchMax(e, 5)}}
+          />
+          <InputNumber className="eachInput" size="large" min={1} max={40} value={this.state.limitSix}
+            onChange={(e) => {this.setState({limitSix: e}); this.patchMax(e, 6)}}
           />
         </div>
       </div>

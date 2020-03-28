@@ -20,6 +20,8 @@ export default class ChartBars extends Component {
       {id:1, sensor: 'Sensor 2', temp: 23},
       {id:1, sensor: 'Sensor 3', temp: 23},
       {id:1, sensor: 'Sensor 4', temp: 23},
+      {id:1, sensor: 'Sensor 5', temp: 23},
+      {id:1, sensor: 'Sensor 6', temp: 23},
     ],
     cols: {id: {range: [0,1]}}
   }
@@ -33,8 +35,10 @@ export default class ChartBars extends Component {
           {id:(this.state.data.length / 4) + 1, sensor: 'Sensor 2', temp: dataReceived[1].temperatura},
           {id:(this.state.data.length / 4) + 1, sensor: 'Sensor 3', temp: dataReceived[2].temperatura},
           {id:(this.state.data.length / 4) + 1, sensor: 'Sensor 4', temp: dataReceived[3].temperatura},
+          {id:(this.state.data.length / 4) + 1, sensor: 'Sensor 5', temp: dataReceived[4].temperatura},
+          {id:(this.state.data.length / 4) + 1, sensor: 'Sensor 6', temp: dataReceived[5].temperatura},
         ]
-        let temperaturas = [...this.state.data, insert[0], insert[1], insert[2], insert[3]]
+        let temperaturas = [...this.state.data, insert[0], insert[1], insert[2], insert[3], insert[4], insert[5]]
         this.setState({data: temperaturas})
       })
     }, 1000 * 180)

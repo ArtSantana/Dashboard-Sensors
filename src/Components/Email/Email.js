@@ -43,7 +43,7 @@ export default class Email extends Component {
           type="email"
           onChange={(e) => {this.setState({email: e.target.value})}}
         />
-        <Button variant="contained" color="primary" onClick={this.handleSend}>Send</Button>
+        <Button variant="contained" style={{backgroundColor:"#7159C1", color:"#FFF"}} onClick={this.handleSend}>Send</Button>
       </div>
     );
   }
