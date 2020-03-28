@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
-import Config from './Config/Config';
-import {Switch, Route, Link, BrowserRouter as Router} from 'react-router-dom';
+import Config from './pages/Config/Config';
+import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
 import 'antd/dist/antd.css';
-import HomeIcon from '@material-ui/icons/Home';
-import SettingsIcon from '@material-ui/icons/Settings';
-import Home from './Home/Home';
+import Home from './pages/Home/Home';
+import './global.css'
+import MenuHeader from './Components/MenuHeader/MenuHeader';
 
 export default class App extends Component {
   render() {
     return (
       <Router>
         <div className="Layout">
-          <div className="header">            
-            <Link to="/"><HomeIcon fontSize="large" className="btnHeader"/></Link>            
-            <Link to="/config"><SettingsIcon fontSize="large" className="btnHeader" /></Link>
+          <div className="header">
+            <MenuHeader />
           </div>
           <div className="content">
             <Switch>

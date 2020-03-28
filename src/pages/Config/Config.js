@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import SwitchSensors from '../SensorSwitch/SwitchSensors';
-import TempLimit from '../TempLimit/TempLimit';
-import Email from '../Email/Email';
+import SwitchSensors from '../../Components/SensorSwitch/SwitchSensors';
+import TempLimit from '../../Components/TempLimit/TempLimit';
+import Email from '../../Components/Email/Email';
 import './Config.css'
 
 export default class Config extends Component {

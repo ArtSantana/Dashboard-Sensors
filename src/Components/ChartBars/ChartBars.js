@@ -27,7 +27,7 @@ export default class ChartBars extends Component {
   render(){
     const loop = setTimeout(() => {
       let test = getData();
-      Promise.resolve(test).then((dataReceived) =>{
+      Promise.resolve(test).then((dataReceived) => {
         let insert = [
           {id:(this.state.data.length / 4) + 1, sensor: 'Sensor 1', temp: dataReceived[0].temperatura},
           {id:(this.state.data.length / 4) + 1, sensor: 'Sensor 2', temp: dataReceived[1].temperatura},
@@ -35,9 +35,6 @@ export default class ChartBars extends Component {
           {id:(this.state.data.length / 4) + 1, sensor: 'Sensor 4', temp: dataReceived[3].temperatura},
         ]
         let temperaturas = [...this.state.data, insert[0], insert[1], insert[2], insert[3]]
-          if(temperaturas.length > 160) {
-            temperaturas = [...insert[0], insert[1], insert[2], insert[3]];
-          }
         this.setState({data: temperaturas})
       })
     }, 1000 * 180)
